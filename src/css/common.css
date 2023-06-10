@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Task #1 */
+
+[data-start]:hover,
+[data-start]:focus,
+[data-stop]:hover,
+[data-stop]:focus {
+  background-color: rgba(128, 203, 100, 0.6);
+  border: 2px solid #000;
+}
+
+[data-start]:disabled,
+[data-stop]:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 1px solid #000;
+}
+
+/* Task #2 */
+
+#datetime-picker {
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  width: 400px;
+  height: 40px;
+
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #3b3b3b;
+
+  background-color: rgba(128, 203, 100, 0.6);
+  border-radius: 5px;
+  border: none;
+}
+
+.timer {
+  padding: 10px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  color: #3b3b3b;
+
+  background-color: rgba(128, 203, 100, 0.6);
+  border-radius: 5px;
+}
+
+.value {
+  padding: 3px;
+  background-color: rgba(128, 203, 196, 0.8);
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+/* Task #3 */
+
+.form {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+
+.form label {
+  margin-bottom: 15px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 370px;
+  height: 45px;
+
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #3b3b3b;
+
+  background-color: rgba(128, 203, 196, 0.8);
+  border-radius: 5px;
+  border: none;
+}
+
+.form label:not(:last-child) {
+  margin-right: 20px;
+}
+
+.form input {
+  padding: 5px;
+  width: 200px;
+
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  color: #3b3b3b;
+
+  background-color: rgba(128, 100, 196, 0.5);
+  border-radius: 5px;
+  border: none;
+}
+
+.form button {
+  width: 280px;
+  height: 45px;
+
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #3b3b3b;
+
+  background-color: rgba(128, 100, 196, 0.5);
+  border-radius: 5px;
+  border: none;
+
+  cursor: pointer;
+
+  transition: 250ms;
+}
+
+.form button:hover {
+  background-color: rgba(128, 203, 196, 0.8);
+}
+
+.form button:focus {
+  outline: 3px solid rgba(128, 203, 196, 0.8);
+  background-color: rgba(128, 203, 196, 0.8);
+}
